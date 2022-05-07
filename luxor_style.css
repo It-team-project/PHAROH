@@ -1,0 +1,225 @@
+#header a{
+    color: #bb4a4a;
+    text-decoration-line: none;
+}
+
+#header a:hover{
+    color: #bb4a4a;
+}
+
+.des{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.des p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.welcome{
+    border: 5px solid none;
+    height: 300px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.info_1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_1 ul{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.welcome h2{
+    color: #41b7b3;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffdb60;
+}
+
+.info_2 .topic{
+    font-size: 24px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_2 .attraction_text{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+
+}
+
+.info_2 a{
+    font-size: 22px;
+    text-decoration-line: none;
+    color: black;
+    margin-top: 5px;
+
+}
+
+.info_2 a:hover{
+    color: purple;
+}
+
+.info_3 span{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_4 h4{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_5 h4{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_6 h4{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_7 h4{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_8 h4{
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #bb0e0e;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.des,.info_1,.info_2,.info_3,.info_4,.info_5,.info_6,.info_7,.info_8{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px gray groove;
+    background-size: cover;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+.info_3,.info_4,.info_5,.info_6,.info_7,.info_8 p{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info_3 h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+body{
+    background-image: url(images-project/background\ blur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    border: 1px solid;
+    background-color: #f9f9f984;
+    color: #bb4a4a;
+    font-size: 1.8em;
+    border-color: none;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 60px;
+    margin: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer{
+    background-color:#3a6cf484;
+    color:white;
+    padding: 1em 1em;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer-title{
+font-size:1.3em;
+font-weight:600;
+}
+
+.footer-title span{
+color:#BB4A4A;
+  }
+
+.footer-title span:hover{
+  color:yellow;
+}
+
+.info_2 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+
+}
+
+.info_3 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+
+}
+.info_4 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+}
+.info_5 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+}
+.info_6 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+}
+.info_7 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+}
+.info_8 img{
+    width: 600px;
+    margin-left: 14%;
+    border-radius: 12px;
+}

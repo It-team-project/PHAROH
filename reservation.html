@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Reservation Confirmation</title>
+</head>
+<body>
+    <header>
+      <a href="search.html" target="_self" class="logo">PHARAOH</a>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Book Your Ticket</h2>
+            <div class="main-card">
+
+                <div class="image-card">
+                     <!-- tiny-iamge -->
+                </div>
+                <form method="POST">
+                <div class="card-content">
+                    <h3 class="title">Reservation</h3>
+                    <div class="data">
+                       <div class="input">
+                        <input type="text" placeholder="Full Name" name="Name" id="form">
+                        <input type="email" placeholder="Email" name="Email" id="form">
+                        <input type="password" placeholder="Password" name="Password" id="form">
+                       </div>
+                       <div class="buttons">
+                            <div class="book">
+                                <input type="button" value="Confirm" onclick="setTimeout(myFunction,3000);">
+                            </div>
+                            <div class="edit">
+                              <input type="reset" value="Remove">
+                              <p id="confirm" style="color:green;background-color:whitesmoke; margin-top:10%" > </p>
+                              <p id="time" style="color:green;background-color:whitesmoke; margin-top:10%" > </p>
+
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-title">Copyrights @ <span>PHARAOH</span></p>
+        <div class="icons">
+            <a href="@"><i class="fa-brands fa-facebook"></i></a>
+            <a href="@"><i class="fa-brands fa-instagram"></i></a>
+            <a href="@"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </footer>
+
+<script>
+  function myFunction() {
+    var txt;
+    if (confirm("Are you sure you want to book it?")) {
+      txt = "You confirm your order in:-";
+      const d = new Date();
+
+     document.getElementById("time").innerHTML = d;
+    } else {
+      txt = "You Cancelled your order!";
+    }
+    document.getElementById("confirm").innerHTML = txt;
+
+  }
+
+
+
+  </script>
+
+
+</body>
+</html>

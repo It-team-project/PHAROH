@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css ">
+    <title>Sign up</title>
+</head>
+<body>
+  <h2> Pharoh </h2>
+
+    <div class="loginbox">
+        <img src="images-project/avatar.jpg" class="avatar">
+        <h1>Sign up</h1>
+        <form>
+          <label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Name" required>
+         <label for="phone number" id="phone ">Phone number:</label>
+         <br> <br>
+<input type="text" name="phone number" pattern="[0-9]{10}" placeholder="number" required>
+        <label for="password">password:</label>
+<input type="password" id="password" name="password" placeholder="password (prefer to be strong)" required>
+      <label for="password">confirm password:</label>
+ <input type="password" id="confirm_password" name="password" placeholder="Confirm password" required>
+
+      <input type="submit" value="Sign up" onclick="formsubmit()"  required>
+      <a href="home.html" target="_self"> already a pharoh? </a>
+        </form>
+
+    </div>
+    <footer class="footer">
+      <p class="footer-title"> Copyrights 2022 @ <span>PHAROH</span> </p>
+    </footer>
+
+    <script>
+    var password = document.getElementById("password")
+      , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    password.onchange = validatePassword;
+    function formsubmit(){
+      alert("Your account is ready welcome our new pharoh,confirmation mail will be send as soon as possible");
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>

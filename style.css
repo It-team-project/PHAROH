@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;800&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    color: #BB4A4A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+header{
+    background-color: #161719;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: url("images-project/background_image.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+}
+
+.title{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 170px;
+}
+
+.all-cards{
+    padding: 10px;
+}
+
+
+.card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 70%;
+    height: 300px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+    margin: 30px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.image-card :hover{
+    opacity: 0.9;
+}
+
+.image-card{
+    height:160px;
+    width: 185px;
+    margin: 5px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-card img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    background-color:#BB4A4A;
+
+
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.name h3{
+    font-size:1.2em ;
+    font-weight: 500;
+}
+
+.name h4{
+    font-size:1.2em ;
+    font-weight: 500;
+}
+
+.name h4 span{
+    font-weight: 700;
+    color: #BB4A4A;
+}
+
+.links{
+    text-align: center;
+
+
+
+}
+
+.links  a{
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 45px;
+    margin-right: 10px;
+}
+
+.links :hover{
+    opacity: 0.8     ;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #BB4A4A!important;
+    margin: 0 5px;
+}
+
+.owl-dot:hover{
+    background: #BB4A4A!important;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:#161719 ;
+    padding: 10px;
+}
+
+footer p{
+    color: #fff;
+}
+
+footer span{
+    color: #BB4A4A;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+footer a{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+footer a:hover{
+    opacity: 0.8;
+}

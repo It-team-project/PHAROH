@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <title>Your profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<body>
+  <header>
+    <a href="$" class="logo"> PHAROH </a>
+    <nav class="navigation">
+      <a href="home.html" target="_self"> Home </a>
+    <a href="index.html" target="_self"> Log-out </a>
+      <a href="Contact.html" target="_self"> Contact us </a>
+
+     </nav>
+     </header>
+<section class="main">
+  <div>
+    <h2 contenteditable="true"> Hello,I am . <text id="name"> </text> <br> <span contenteditable="true" id="brief">
+    </span></h2>
+    <h3 contenteditable="true" id="work"></h3>
+    <a href="#" class="main-btn">View my travels</a><br>
+  </div>
+</section>
+  <section class="cards">
+    <h2 class="title"> Our Services </h2>
+    <div class="content">
+    <div class="card">
+    <div class="icon">
+<i class="fa-solid fa-jet-fighter"></i>
+</div>
+
+    <div class="info">
+      <h3> Travrls. </h3>
+      <p> We will help you as a user to this profile to have a travels around monuments of Egypt and visiting historicals places as Aswan,Giza,Qena ..etc </p>
+    </div>
+  </div>
+    <div class="card">
+    <div class="icon">
+      <i class="fa-solid fa-question"></i>
+    </div>
+    <div class="info">
+      <h3> Historical information. </h3>
+      <p> We will help the user of this profile to know more informations about Egypt just enter your question in message text field in contact us page </p>
+  </div>
+</div>
+  </section>
+  <section class="contacts">
+    <h2 class="title"> Contacts </h2>
+    <div class="content">
+    <div class="card">
+    <div class="icon">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+      <div class="info">
+      <h3> Phone number </h3>
+    <p contenteditable="true" id="phone"> </p>
+      </div>
+    </div>
+    <div class="card">
+    <div class="icon">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+    </div>
+      <div class="info">
+      <h3> E-mail. </h3>
+    <p contenteditable="true" id="mail"> </p>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    <p class="footer-title"> Copyrights 2022 @ <span>PHAROH</span> </p>
+  </footer>
+  <script>
+  let person = prompt("Please enter your name", "Your name");
+  let brief = prompt("Please enter short brief about you", "I am work as ....");
+  let phone= prompt("Please enter your phone number", "1234");
+  let work=prompt("Please enter your work place", "I work at Helwan universty");
+  let mail =prompt("Please enter your mail","john.doe@gmail.com");
+
+  document.getElementById("name").innerHTML = person;
+  document.getElementById("brief").innerHTML = brief;
+  document.getElementById("phone").innerHTML = phone;
+  document.getElementById("work").innerHTML = work;
+  document.getElementById("mail").innerHTML = mail;
+  </script>
+</body>
+</html>

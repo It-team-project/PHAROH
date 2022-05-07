@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="search.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+</head>
+<body>
+  <section id="search">
+<h2 id="main-title">Search Menu</h2>
+<p id="main-title">Start to search about what you want.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="home.html" target="_self">Homepage</a></li>
+      <li><a href="index.html"target="_self" >sign-up</a></li>
+      <li><a href="profile.html"target="_self">profile page</a></li>
+      <li><a href="Contact.html"target="_self">contact us</a></li>
+      <li><a href="developers.html"target="_self">Our developers</a></li>
+      <li><a href="reservation.html"target="_self">reservation form</a></li>
+      <li><a href="slide_1.html"target="_self">booking page</a></li>
+      <li><a href="info.html"target="_self">Historical information</a></li>
+      <li><a href="aswan.html"target="_self">Aswan</a></li>
+      <li><a href="fayoum.html"target="_self">Fayoum</a></li>
+      <li><a href="alex.html"target="_self">Alexandria</a></li>
+      <li><a href="pyramids.html"target="_self">Giza</a></li>
+     <li><a href="sohag.html"target="_self">Our Monuments</a></li>
+     <li><a href="sohag.html"target="_self">Sohag</a></li>
+     <li><a href="siwa.html"target="_self">Siwa</a></li>
+     <li><a href="luxor.html"target="_self">Luxor</a></li>
+
+
+
+
+
+
+
+
+    </ul>
+  </div>
+
+  <div class="right" style="background-color:#ddd;">
+    <h2>PHAROHS</h2>
+    <p> Our page help you to know more about Egypt's histroy informations and to have fun and knowledge by visting our historical place,join us know what are you waiting for?!</p>
+  </div>
+</div>
+</section>
+<section class="cards" id="services">
+  <h2 class="title"> Get our services by on click. </h2>
+  <div class="content">
+  <div class="card">
+  <div class="icon">
+<a href="https://it-team-project.github.io/information-guide/"> <i class="fa-solid fa-info"></i> </a>
+</div>
+
+  <div class="info">
+    <h3> Historical information. </h3>
+    <p> Our website help you to know more informations about Egypt and it's historical places just click it.</p>
+  </div>
+</div>
+  <div class="card">
+  <div class="icon">
+<a href="https://a7medzaki.github.io/page2/"><i class="fa-brands fa-css3"></i></a>
+    </div>
+  <div class="info">
+    <h3> Code it </h3>
+    <p> Our developers will help you if you want to make a responsive webpage by CSS,HTML and JS. </p>
+</div>
+</div>
+<div class="card">
+<div class="icon">
+  <a href="https://it-team-project.github.io/Booking/"><i class="fa-solid fa-ticket-simple"></i></a>
+
+</div>
+
+<div class="info">
+  <h3> Book it. </h3>
+  <p> Our page will help you to have a tour around Egypt and visit a historical places by a cheap price. </p>
+</div>
+</div>
+<div class="card">
+<div class="icon">
+  <a href="https://it-team-project.github.io/reservation/"><i class="fa-solid fa-truck-plane"></i></a>
+</div>
+<div class="info">
+  <h3> Check your ticket. </h3>
+  <p> You can check your ticket from here just click it. </p>
+</div>
+</div>
+
+</div>
+</section>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

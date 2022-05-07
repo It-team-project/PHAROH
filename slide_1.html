@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <title>
+            Booking trips to archaeological sites in Egypt
+        </title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="slide_1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body id="body">
+        <header class="head1">
+            <a href="search.html" target="_self" class="logo2"> PHARAOH </a>
+            <nav class="navigation">
+              <a href="search.html" target="_self"> Services </a>
+                <a href="slide_1.html" target="_self"> Booking </a>
+                <a href="Contact.html" target="_self"> Contact us </a>
+            </nav>
+            <textarea class="search" type="search" placeholder=" Search"></textarea>
+            <i class="fa fa-search"></i><br>
+        </header>
+        <!-- <p id="hell" class="hell1"></p> -->
+        <section class="main">
+
+            <h1>
+                Booking trips to archaeological sites in Egypt
+            </h1>
+            <p id="hell" class="hell1"></p>
+            <!--<img src="images/image_1.jpg" title="image_1">-->
+            <form method="POST" id="frm" action="https://formspree.io/f/xknypkre">
+                <p class="p1">
+                    <div class="div1">
+                        <label></label>
+                        <input id ="lest" list="whr" name="whr" required placeholder="where to..?" class="lst">
+                        <datalist id="whr">
+                            <option value="Luxor">
+                            <option value="Aswan">
+                            <option value="Giza">
+                            <option value="Fayoum">
+                            <option value="Alexandria">
+                            <option value="Qana">
+                            <option value="Siwa">
+                        </datalist>
+                        <input type="date" class="dte" required >
+                        <input list="number-of-psssenger" name="num" required placeholder="Visitor" class ="vst">
+                            <datalist id="number-of-psssenger">
+                                <option value="1 Visitor">
+                                <option value="2 Visitor">
+                                <option value="3 Visitor">
+                                <option value="4 Visitor">
+                                <option value="5 Visitor">
+                                <option value="6 Visitor">
+                                <option value="7 Visitor">
+                            </datalist>
+                            <input id="day" list="days" name="days" required placeholder="Days" class ="dys">
+                            <datalist id="days">
+                                <option value="1 day">
+                                <option value="2 day">
+                                <option value="3 day">
+                                <option value="4 day">
+                                <option value="5 day">
+                                <option value="6 day">
+                                <option value="7 day">
+                            </datalist>
+                        <br>
+                        <a href="#in" class="link">about</a>
+                        <a href="reservation.html" target="_self"><input id ="submit" type="submit" onclick="formm();"></a>
+                        <input type="reset">
+                        <br>
+                        <img src="images-project/rahla_1.png" title="rahalat" class="image">
+                        <img src="images-project/rahla_2.jpg" title="neel_masr" class="image">
+                        <img src="images-project/rahla_3.png" title="masr_lltayran" class="image">
+                        <img src="images-project/rahla_4.png" title="trivago" class="image">
+                        <!-- <label>number of passengers</label>
+                        <input type="number" min="1" max="10" required placeholder="" value="1"> -->
+                        <br><br><br>
+                        <!-- <input id ="Jour1" type="radio" name="Journey">
+                        <label for="Jour1">
+                                <img class="img_as" src="images/asswan1.jpg" >                        </div>
+                        </label> -->
+                    </div>
+                </p>
+                <div >
+                    <video controls loop muted autoplay title="ads" class="ads1">
+                        <source src="images-project/tirifago_ads.mp4" type="video/mp4">
+                        <source src="images-project/tirifago_ads.ogg" type="video/ogg">
+                    </video>
+                    <img src="images-project/ads2.jpg" title="ads" class="ads2">
+                </div>
+            </form>
+        </section>
+        <button class="btn" onclick="daymode();">Day mode</button>
+        <button class="btn" onclick="nightmode();">night mode</button>
+        <section class="cards">
+            <h2 class="title">Information</h2>
+            <div class="content" id="in">
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/luxor-temple.png" title="Luxor" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Luxor</h3>
+                        <p>
+                            100 L.E per one day
+                            <br>
+                            100 L.E per one passenger
+                            <br>
+                            time to leave : 6:00 AM
+                            <br>
+                            Programe : a visit to Karnak Temple, a visit to Valley of the Kings ...
+                            <br>
+                            <button onclick="lnk1();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/aswan.png" title="Aswan" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Aswan</h3>
+                        <p>
+                            120 L.E per one day
+                            <br>
+                            80 L.E per one passenger
+                            <br>
+                            time to leave : 5:00 AM
+                            <br>
+                            programe : a visit to Abu Simbel Temples, a visit to Temple of Philae, Aglika Island ...
+                            <br>
+                            <button onclick="lnk2();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="icon">
+                        <img src="images/icons/pyramid.png" title="Giza" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Giza</h3>
+                        <p>
+                            80 L.E per one day
+                            <br>
+                            90 L.E per one passenger
+                            <br>
+                            time to leave : 7:00 AM
+                            <br>
+                            programe : a visit to pyramids, a visit to Memphis and Sakkara ...
+                            <br>
+                            <button onclick="lnk3();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div> -->
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/Fayoum.png" title="Fayoum" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Fayoum</h3>
+                        <p>
+                            60 L.E per one day
+                            <br>
+                            80 L.E per one passenger
+                            <br>
+                            time to leave : 9:00 AM
+                            <br>
+                            programe : a visit to Hawara pyramid , a visit to Tunisia Village ...
+                            <br>
+                            <button onclick="lnk3();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/alex.jpeg" title="Alexandria" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Alexandria</h3>
+                        <p>
+                            150 L.E per one day
+                            <br>
+                            150 L.E per one passenger
+                            <br>
+                            time to leave : 9:00 AM
+                            <br>
+                            programe : a visit to Library of Alexandria , a visit to alexandria national museum ...
+                            <br>
+                            <button onclick="lnk4();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/Sohag.jpg" title="َSohag" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>َSohag</h3>
+                        <p>
+                            60 L.E per one day
+                            <br>
+                            80 L.E per one passenger
+                            <br>
+                            time to leave : 8:00 AM
+                            <br>
+                            programe : a visit to Temple of Rameses II , a visit to Temple Of Seti I ...
+                            <br>
+                            <button onclick="lnk5();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/sewa.jpeg" title="َSiwa" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Siwa</h3>
+                        <p>
+                            80 L.E per one day
+                            <br>
+                            60 L.E per one passenger
+                            <br>
+                            time to leave : 10:00 AM
+                            <br>
+                            programe : a visit to Great Sand Sea , a visit to Shali Fortress ...
+                            <br>
+                            <button onclick="lnk6();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images-project/pyramid.png" title="Giza" width="70px" height="70px">
+                    </div>
+                    <div class="info">
+                        <h3>Giza</h3>
+                        <p>
+                            80 L.E per one day
+                            <br>
+                            90 L.E per one passenger
+                            <br>
+                            time to leave : 7:00 AM
+                            <br>
+                            programe : a visit to pyramids, a visit to Memphis and Sakkara ...
+                            <br>
+                            <button onclick="lnk7();" class="btn">about the town</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="difr" class="hidebtn">
+            <iframe src="" frameborder="0" id="ifr" width="500" height="500" class="ifra"></iframe>
+            <br>
+            <button onclick="dislnk4();" class="btn" id="butt">Hide</button>
+        </div>
+
+        <div class="cookie" id="cookie2">
+            <p id="cookie1"></p>
+        </div>
+
+
+        <footer class="footer">
+            <p class="Copyrights"> &copy; Copyrights 2022 @ <span>PHARAOH</span></p>
+            <div>
+                <a href="https://www.linkedin.com/in/ahmed-mahmoud-239990223/" target="_blank"><i  id="linkedin"class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100021734603058" target="_blank"><i  id="fb"class="fa-brands fa-facebook"></i></a>
+                <a href=""><i id="yt"class="fa-brands fa-youtube"></i></a>
+                <a href="" ><i id="tweet"class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+        <script src="slide_1.js"></script>
+    </body>
+</html>
