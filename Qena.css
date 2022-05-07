@@ -61,7 +61,7 @@ header{
       color:black;
       display:inline-block;
       margin-top: 30%;
-      background:url(images-project/background.jpg) repeat-y;height: 100%; width: 100%;
+      background:url(image/background.jpg) repeat-y;height: 100%; width: 100%;
       background-size: cover;
       background-position: center;
 
@@ -459,7 +459,7 @@ line-height:2em;
 
 }
 .more{
-  background-image: url("images-project/back.jpg");height: 100%; width: 100%;
+  background-image: url("image/back.jpg");height: 100%; width: 100%;
   width:100%;
   min-height:100vh;
   display:flex;
