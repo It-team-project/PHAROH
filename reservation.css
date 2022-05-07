@@ -28,7 +28,7 @@ header{
 .main{
     width: 100%;
     min-height: 100vh;
-    background: url("images-project/background.jpg") no-repeat;
+    background: url("image/background.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed, scroll;
 }
