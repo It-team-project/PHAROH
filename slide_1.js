@@ -16,7 +16,7 @@ function daymode(){
     document.getElementById('cookie1').style.color='black';
 }
 function nightmode(){
-    document.getElementById('body').style.backgroundImage= 'url("images-project/image_1.jpg")';
+    document.getElementById('body').style.backgroundImage= 'url("images-project/image_2.jpg")';
     document.getElementById('hell').style.color='white';
     document.getElementById('cookie1').style.color='white';
 
